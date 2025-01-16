@@ -6,8 +6,8 @@ export default defineConfig({
       input: {
         main: '/index.html',
         company: '/company/index.html',
-        openroles: '/jobs/index.html',
-        djangoapplication: '/applications/',
+        openroles: '/open-roles/index.html',
+        applications: '/applications/',
       },
     },
   },

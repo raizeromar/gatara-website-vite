@@ -3,11 +3,11 @@ export const footer = `
       <div
         class="SiteFooter_wrapper__qFXh_ wrapper xs:grid xs:grid-2 s:grid-12"
       >
-        <div class="SiteFooter_logo-mark__pkgIW xs:col-start-1 xs:col-span-1">
-          <a aria-label="AI logo mark" href="#">
-            <h1 style="font-weight: bold">Gatara AI</h1></a
-          >
-          <h1><a aria-label="AI logo mark" href="#"> </a></h1>
+        <div class="SiteFooter_logo-mark__pkgIW xs:col-start-1 xs:col-span-1" style="width: auto;">
+          <a aria-label="AI logo mark" href="/">
+            <img alt="Logo" src="/public/logo.svg" width="75" height="75">
+          </a>
+          <h1><a aria-label="AI logo mark" href="/"> </a></h1>
         </div>
         <div
           class="SiteFooter_footer-top__rZBHh xs:col-start-1 xs:col-span-2 s:grid s:grid-6 s:col-start-5 s:col-span-8 m:col-start-5 m:col-span-6"
@@ -18,11 +18,11 @@ export const footer = `
             </li>
 
             <li>
-              <a href="#">Company </a>
+              <a href="/company/">Company </a>
             </li>
 
             <li>
-              <a href="#">Careers </a>
+              <a href="/open-roles/">Careers </a>
             </li>
           </ul>
           <hr class="SiteFooter_hrule__6yi4j" />
