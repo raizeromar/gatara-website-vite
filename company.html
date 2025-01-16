@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+
+<html lang="en" class="__variable_42f43f __variable_403256 __variable_57fc85 __variable_34e0db">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style data-emotion="css" data-s="">
+</style>
+<style>.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);}.ace_editor.ace_autocomplete .ace_line-hover {    position: absolute;    z-index: 2;}.ace_editor.ace_autocomplete .ace_scroller {   background: none;   border: none;   box-shadow: none;}.ace_rightAlignedText {    color: gray;    display: inline-block;    position: absolute;    right: 4px;    text-align: right;    z-index: -1;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #000;    text-shadow: 0 0 0.01em;}.ace_editor.ace_autocomplete {    width: 280px;    z-index: 200000;    background: #fbfbfb;    color: #444;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;}
+</style>
+<style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}
+</style>
+<style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none;line-height:1.4}.tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-8px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 6px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 90%;transform-origin:0 90%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,25%);transform:scale(6) translate(-50%,25%);opacity:1}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,25%);transform:scale(1) translate(-50%,25%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-8px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 6px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -90%;transform-origin:0 -90%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,-125%);transform:scale(6) translate(-50%,-125%);opacity:1}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,-125%);transform:scale(1) translate(-50%,-125%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-16px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:100% 0;transform-origin:100% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(40%,-50%);transform:scale(6) translate(40%,-50%);opacity:1}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(40%,-50%);transform:scale(1.5) translate(40%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-16px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-100% 0;transform-origin:-100% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-140%,-50%);transform:scale(6) translate(-140%,-50%);opacity:1}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(-140%,-50%);transform:scale(1.5) translate(-140%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-animatefill] .tippy-content{transition:-webkit-clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98),-webkit-clip-path cubic-bezier(.46,.1,.52,.98)}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:24px;height:8px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:26%;left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(100% 100% at 50% 50%);clip-path:ellipse(100% 100% at 50% 50%)}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(5% 50% at 50% 50%);clip-path:ellipse(5% 50% at 50% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 0 50%);clip-path:ellipse(135% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 0 50%);clip-path:ellipse(40% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 100% 50%);clip-path:ellipse(40% 100% at 100% 50%)}@media (max-width:360px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}
+</style>
+<style data-merge-styles="true">
+</style>
+<style data-merge-styles="true">
+</style>
+<style data-merge-styles="true">
+</style>
+<link rel="stylesheet" href="./company/60a6eb6d0fe040c5.css" data-precedence="next">
+<link rel="stylesheet" href="./company/b65f95011ed324dc.css" data-precedence="next">
+<link rel="stylesheet" href="./company/9fa4718bb3ae1cae.css" data-precedence="next">
+<link rel="stylesheet" href="./company/91315883a9b46a52.css" data-precedence="next">
+<link rel="stylesheet" href="./company/1f513daff08a6d25.css" data-precedence="next">
+<link rel="stylesheet" href="./company/c3a81d2cee1ead21.css" data-precedence="next">
+<link rel="stylesheet" href="./company/ac6d945a28327846.css" data-precedence="next">
+<link rel="stylesheet" href="./company/8a05732638d9b3eb.css" data-precedence="next">
+<link rel="stylesheet" href="./company/fec95abf28dff384.css" data-precedence="next">
+<link rel="stylesheet" href="./company/31ced174618104b6.css" data-precedence="next">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#141413">
+<title>Company \ Gatara AI
+</title>
+
+<meta name="next-size-adjust">
+<style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+}
+
+::selection {
+  background-color: #68ad78;
+}
+</style>
+<style data-styled="active" data-styled-version="5.3.11">
+</style>
+</head>
+<body>
+	
+  <header class="SiteHeader_core-header__zJj3x SiteHeader_bg-ivory-medium__eqFO7" style="
+  background-color: #faf9f5;
+">
+      <div class="SiteHeader_wrapper__7LSsB wrapper">
+      <a class="SiteHeader_core-logo-link__kHrqG" aria-label="Home" href="#">
+      <div class="SiteHeader_logo-lottie__RQDnP">
+          <h1 style="font-weight: bold;">Gatara AI</h1><h1>
+    </h1></div>
+    </a>
+      <button class="SiteHeader_btn-core-mobile__tgSp1" aria-label="Navigation menu">
+      <svg class="Icon_icon__UdTNj" width="40" height="40" viewBox="0 0 40 40">
+      <path d="M5.418 25.375v-2.083h29.166v2.083H5.418Zm0-8.667v-2.083h29.166v2.083H5.418Z" fill="#141413">
+
+    </path>
+    </svg>
+    </button>
+      <nav class="SiteHeader_core-nav__dsHuH">
+      <div class="SiteHeader_claude-select__1ZKkq">
+      <a href="#">
+      <span class="SiteHeader_link-label__s59w1">Murshed
+
+    </span>
+      <svg class="Icon_icon__UdTNj" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M8.76693 10.7417L12.0003 13.975L15.2336 10.7417C15.5586 10.4167 16.0836 10.4167 16.4086 10.7417C16.7336 11.0667 16.7336 11.5917 16.4086 11.9167L12.5836 15.7417C12.2586 16.0667 11.7336 16.0667 11.4086 15.7417L7.58359 11.9167C7.25859 11.5917 7.25859 11.0667 7.58359 10.7417C7.90859 10.425 8.44193 10.4167 8.76693 10.7417Z" fill="#141413">
+
+    </path>
+    </svg>
+    </a>
+      <div class="SiteHeader_claude-dropdown__8knAe">
+
+
+
+
+
+  
+    </div>
+    </div>
+      <a class="SiteHeader_link-label__s59w1" href="#">Products
+
+    </a>
+      <a class="SiteHeader_link-label__s59w1" href="#">Company
+
+    </a>
+      <a class="SiteHeader_link-label__s59w1" href="#">Careers
+
+    </a>
+      
+      <a href="#" class="ButtonLink_button__hVduT ButtonLink_primary__yV6bX ButtonLink_small__4mz6F SiteHeader_nav-cta-a__e5H8v" rel="noopener" target="_blank" aria-label="Try Claude">
+      <span class="ButtonLink_label__DqhYH">Get a Demo
+
+    </span>
+    </a>
+    </nav>
+    </div>
+    </header>
+
+
+<main id="main" class="">
+	<article>
+	<section class="HeroCta_b-hero-cta__WA_N9 HeroCta_is-initialized__8btG0 Section_section-wrapper__7hN5D Section_flush-top__B83gq">
+	<div class="HeroCta_content__XdOP7 wrapper">
+	<div class="s:grid s:grid-12">
+	<h1 class="HeroCta_heading__KI2JS s:col-start-3 s:col-span-8 h1" style="null">
+	<div class="HeroCta_line-wrapper__oZgBz HeroCta_text-left__U7ci1">
+	<span class="HeroCta_line__raHqP">Making AI systems
+</span> 
+</div>
+<div class="HeroCta_line-wrapper__oZgBz HeroCta_text-right__syMa_">
+	<span class="HeroCta_line__raHqP">you can rely on
+</span> 
+</div>
+</h1>
+<div class="HeroCta_description-wrapper__4wV7A s:col-start-4 s:col-span-6 text-b1 contentFadeUp is-inview">
+	<p>Gatara is an AI and Automation company. We build reliable, interpretable, and steerable AI and Automation systems.
+</p>
+</div>
+<div class="HeroCta_cta-wrapper__j381U s:col-start-3 s:col-span-8 spacer-small-mt">
+	<a class="HeroCta_cta__Wushi btn-primary contentFadeUp is-inview" aria-label="Join us" href="#">
+	<span class="btn-label">Join us
+</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="Section_section-wrapper__7hN5D Section_flush-bottom__qEG0P Section_flush-top__B83gq">
+	<div class="wrapper">
+	<div class="GridList_contentWrap__ukzGq s:grid s:grid-12">
+	<div class="AnimatedDivider_divider__yniiR AnimatedDivider_isInView__VV3UM">
+</div>
+<h2 class="block-label h3 s:col-start-1 s:col-span-4 spacer-medium-mb GridList_heading___ygon">Our Purpose
+</h2>
+<div class="GridList_body__6hr_6 block-content s:col-start-1 s:col-span-8 m:col-start-5 m:col-span-7 text-b2 spacer-medium-mb">
+	<h2 class="GridList_h2__oUFda h2">
+      We believe AI will have a vast impact on the world. 
+      Our mission is to make AI truly useful by simplifying it for everyone, 
+      enabling all to harness its potential for productivity, innovation, and growth.
+  </h2>
+</div>
+<div class="block-content s:col-start-1 s:col-span-12 m:col-start-5 m:col-span-8 s:grid s:grid-12">
+	<div class="spacer-medium-mb s:col-span-6">
+	<h3 class="h3">We Build Practical AI Solutions
+</h3>
+<div class="text-b2 spacer-micro-mt">
+	<p>
+    We aim to build AI systems that are reliable, intuitive, and impactful. 
+    We develop user-friendly SaaS products for seamless AI integration and 
+    offer tailored AI automation services to help businesses streamline operations and boost efficiency.
+  </p>
+</div>
+</div>
+<div class="spacer-medium-mb s:col-span-6">
+	<h3 class="h3">AI for Everyone
+</h3>
+<div class="text-b2 spacer-micro-mt">
+	<p>
+    We believe AI should be accessible to all. By simplifying complex technologies, 
+    we empower individuals and businesses to unlock new possibilities without technical expertise, 
+    aiming to democratize AI as a tool for innovation and growth across industries.
+  </p>
+</div>
+</div>
+<div class="spacer-medium-mb s:col-span-6">
+	<h3 class="h3">Collaboration Drives Innovation
+</h3>
+<div class="text-b2 spacer-micro-mt">
+	<p>
+    Gatara AI is a collaborative team of software developers, business strategists, and creative thinkers. 
+    We bring diverse expertise to build solutions for real-world challenges, working with industries, academia, 
+    and the AI community to push the boundaries of what AI can achieve.
+</p>
+</div>
+</div>
+<div class="spacer-medium-mb s:col-span-6">
+	<h3 class="h3">Challenging the Status Quo
+</h3>
+<div class="text-b2 spacer-micro-mt">
+	<p>
+    Everything we do, we believe in challenging the status quo.
+    We believe in thinking differently. The way we change the status quo is by making our solutions beautifully designed, simple to use, and user-friendly—empowering businesses and individuals to achieve more.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="Section_section-wrapper__7hN5D Section_flush-bottom__qEG0P Section_flush-top__B83gq">
+	<div class="wrapper">
+	<div class="GridList_contentWrap__ukzGq s:grid s:grid-12">
+	<div class="AnimatedDivider_divider__yniiR AnimatedDivider_isInView__VV3UM">
+</div>
+<h2 class="block-label h3 s:col-start-1 s:col-span-4 spacer-medium-mb GridList_heading___ygon">Our Values
+</h2>
+<div class="block-content s:col-start-1 s:col-span-12 m:col-start-5 m:col-span-8 s:grid s:grid-12">
+	<div class="spacer-medium-mb s:col-span-6">
+	<div class="h4">01
+</div>
+<h3 class="h3">Here for the mission
+</h3>
+<div class="text-b2 spacer-micro-mt">
+	<p>
+    At Gatara AI, we exist to make AI accessible and transformative for everyone. 
+    We believe AI should simplify lives, empower businesses, and break barriers.
+    Our mission drives everything we do,
+    from building intuitive SaaS products to delivering cutting-edge AI automation services.
+</p>
+</div>
+</div>
+<div class="spacer-medium-mb s:col-span-6">
+	<div class="h4">02
+</div>
+<h3 class="h3">Think Bold, Act Fearlessly
+</h3>
+<div class="text-b2 spacer-micro-mt">
+	<p>
+    We’re a young team with big goals, and we’re not afraid to challenge the status quo. We embrace bold ideas, 
+    take calculated risks, and learn quickly from our mistakes. 
+    Innovation is at the heart of what we do, and we’re constantly pushing boundaries to create solutions that matter.
+</p>
+</div>
+</div>
+<div class="spacer-medium-mb s:col-span-6">
+	<div class="h4">03
+</div>
+<h3 class="h3">One Team, One Vision
+</h3>
+<div class="text-b2 spacer-micro-mt">
+	<p>
+    Collaboration is our superpower. We’re a tight-knit team where everyone’s voice matters. 
+    We trust each other, celebrate diversity of thought, and work together to turn ideas into reality. 
+    Leadership sets the direction, but every team member has the freedom to innovate and contribute in their unique way.
+</p>
+</div>
+</div>
+<div class="spacer-medium-mb s:col-span-6">
+	<div class="h4">04
+</div>
+<h3 class="h3">Keep It Simple, Make It Work
+</h3>
+<div class="text-b2 spacer-micro-mt">
+	<p>
+    We believe in simplicity and practicality. Instead of overcomplicating things, 
+    we focus on solutions that are elegant, effective, and easy to use. Whether it’s our products or our processes, 
+    we prioritize what works and iterate to make it better.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="CtaBanner_b-ctaBanner__Apkv7 CtaBanner_dark__mehSY Section_section-wrapper__7hN5D bg-slate-medium">
+	<div class="wrapper s:grid s:grid-12">
+	<div class="s:col-start-2 s:col-span-10 m:col-start-4 m:col-span-6">
+	<h2 class="CtaBanner_heading__ydH8I h2 heading-simple" style="null">Want to help us make AI usefull and accessible for everyone?
+</h2>
+<div class="CtaBanner_cta-1__94eJ2 contentFadeUp is-inview">
+	<a class="ButtonLink_button__hVduT ButtonLink_primary__yV6bX ButtonLink_small__4mz6F" aria-label="Join us" href="#">
+	<span class="ButtonLink_label__DqhYH">Join us
+</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</article>
+</main>
+
+<footer class="SiteFooter_core-footer__VWM8c">
+  <div class="SiteFooter_wrapper__qFXh_ wrapper xs:grid xs:grid-2 s:grid-12">
+  <div class="SiteFooter_logo-mark__pkgIW xs:col-start-1 xs:col-span-1">
+  <a aria-label="AI logo mark" href="#">
+    <h1 style="font-weight: bold;">Gatara AI</h1></a><h1><a aria-label="AI logo mark" href="#">
+</a>
+</h1></div>
+  <div class="SiteFooter_footer-top__rZBHh xs:col-start-1 xs:col-span-2 s:grid s:grid-6 s:col-start-5 s:col-span-8 m:col-start-5 m:col-span-6">
+  <ul class="s:col-start-1 s:col-span-2">
+  <li>
+  <a href="https://murshed.gatara.org">Murshed
+
+</a>
+</li>
+
+  <li>
+  <a href="#">Company
+
+</a>
+</li>
+
+  <li>
+  <a href="#">Careers
+
+</a>
+</li>
+</ul>
+  <hr class="SiteFooter_hrule__6yi4j">
+  <ul class="s:col-start-3 s:col-span-2">
+  <li>
+  <a href="mailto:info@gatara.org">Press Inquiries
+
+</a>
+</li>
+  
+  <li>
+  <a href="#" rel="noopener" target="_blank">LinkedIn
+
+</a>
+</li>
+  <li>
+  <a href="https://www.instagram.com/gatara.ai" rel="noopener" target="_blank">Instagram
+
+</a>
+</li>
+  <li>
+  <a href="#" rel="noopener" target="_blank">Facebook
+
+</a>
+</li>
+</ul>
+
+  <div class="SiteFooter_footer-bottom__1251A xs:col-start-1 xs:col-span-2 s:col-start-5 s:col-span-8 m:col-start-11 m:col-span-2">
+  <div class="SiteFooter_copyright__YACmd">© 2025 Gatara AI
+
+</div>
+</div>
+</div>
+</div></footer>
+<script id="gtm-init" data-nscript="afterInteractive">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('consent', 'default', {"ad_personalization":"granted","ad_user_data":"granted","ad_storage":"granted","analytics_storage":"granted","functionality_storage":"granted","personalization_storage":"granted","security_storage":"granted"});
+        gtag('js', new Date());
+
+        var firstTag = document.getElementsByTagName('script')[0]
+        scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KWW2N9TQ';
+        firstTag.parentNode.insertBefore(scriptTag ,firstTag);
+        
+      
+      </script>
+      <next-route-announcer style="position: absolute;">
+      	<template shadowrootmode="open">
+      	<div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;">
+      </div>
+  </template>
+  </next-route-announcer>
+      <scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible; visibility: visible;">
+      	<template shadowrootmode="open">
+      	<div id="root-scribe-elem" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: rgb(15, 23, 42);">
+      	<div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+      	<ol tabindex="-1" class="fixed bottom-auto right-0 top-0 z-[99999] flex max-h-screen w-[400px] max-w-full p-4">
+      </ol>
+  </div>
+  </div>
+      <link rel="stylesheet" href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css">
+  </template>
+  </scribe-shadow>
+      <div>
+      </div>
+      <div id="compose-ai-general-snackbar-root">
+      </div>
+      <div id="Chat-Plugin-Root" class="compose-root-component">
+      </div>
+  </body>
+      <editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important">
+      	<div dir="ltr" style="all: initial;">
+      	<div style="color-scheme: initial; forced-color-adjust: initial; mask: initial; math-depth: initial; position: absolute; position-anchor: initial; text-size-adjust: initial; appearance: initial; color: initial; font: initial; font-palette: initial; font-synthesis: initial; inset-area: initial; position-area: initial; text-orientation: initial; text-rendering: initial; text-spacing-trim: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; anchor-name: initial; animation-composition: initial; animation: initial; app-region: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-decoration-break: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; field-sizing: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; interpolate-size: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask-type: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position-try: initial; position-visibility: initial; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-align: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-color: initial; scrollbar-gutter: initial; scrollbar-width: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; text-wrap: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-transition-class: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; white-space-collapse: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;">
+      	<link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css">
+      <div style="all: initial;">
+      	<template shadowrootmode="open">
+      </template>
+  </div>
+  </div>
+      <div style="color-scheme: initial; forced-color-adjust: initial; mask: initial; math-depth: initial; position: absolute; position-anchor: initial; text-size-adjust: initial; appearance: initial; color: initial; font: initial; font-palette: initial; font-synthesis: initial; inset-area: initial; position-area: initial; text-orientation: initial; text-rendering: initial; text-spacing-trim: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; anchor-name: initial; animation-composition: initial; animation: initial; app-region: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-decoration-break: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; field-sizing: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; interpolate-size: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask-type: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position-try: initial; position-visibility: initial; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-align: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-color: initial; scrollbar-gutter: initial; scrollbar-width: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; text-wrap: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-transition-class: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; white-space-collapse: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;">
+      	<link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css">
+  </div>
+  </div>
+  </editor-card>
+      </html>
