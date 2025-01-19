@@ -5,7 +5,7 @@ export const footer = `
       >
         <div class="SiteFooter_logo-mark__pkgIW xs:col-start-1 xs:col-span-1" style="width: auto;">
           <a aria-label="AI logo mark" href="/">
-            <img alt="Logo" src="/public/logo.svg" width="75" height="75">
+            <img alt="Logo" src="/logo.svg" width="75" height="75">
           </a>
           <h1><a aria-label="AI logo mark" href="/"> </a></h1>
         </div>
