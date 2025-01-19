@@ -14,43 +14,44 @@ export const footer = `
         >
           <ul class="s:col-start-1 s:col-span-2">
             <li>
-              <a href="https://murshed.gatara.org">Murshed </a>
+              <a href="https://murshed.gatara.org" style="font-family: 'Product Sans Regular' !important; font-size: 22px;">Murshed </a>
             </li>
 
             <li>
-              <a href="/company/">Company </a>
+              <a href="/company/" style="font-family: 'Product Sans Regular' !important; font-size: 22px;">Company </a>
             </li>
 
             <li>
-              <a href="/open-roles/">Careers </a>
+              <a href="/open-roles/"  style="font-family: 'Product Sans Regular' !important; font-size: 22px;">Careers </a>
             </li>
           </ul>
           <hr class="SiteFooter_hrule__6yi4j" />
           <ul class="s:col-start-3 s:col-span-2">
             <li>
-              <a href="mailto:info@gatara.org">Press Inquiries </a>
+              <a href="mailto:info@gatara.org"  style="font-family: 'Product Sans Regular' !important; font-size: 22px;">Press Inquiries </a>
             </li>
 
             <li>
-              <a href="#" rel="noopener" target="_blank">LinkedIn </a>
+              <a href="#" rel="noopener" target="_blank"  style="font-family: 'Product Sans Regular' !important; font-size: 22px;">LinkedIn </a>
             </li>
             <li>
               <a
                 href="https://www.instagram.com/gatara.ai"
                 rel="noopener"
                 target="_blank"
+                 style="font-family: 'Product Sans Regular' !important; font-size: 22px;"
                 >Instagram
               </a>
             </li>
             <li>
-              <a href="#" rel="noopener" target="_blank">Facebook </a>
+              <a href="#" rel="noopener" target="_blank"  style="font-family: 'Product Sans Regular' !important; font-size: 22px;">Facebook </a>
             </li>
           </ul>
 
           <div
             class="SiteFooter_footer-bottom__1251A xs:col-start-1 xs:col-span-2 s:col-start-5 s:col-span-8 m:col-start-11 m:col-span-2"
           >
-            <div class="SiteFooter_copyright__YACmd">© 2025 Gatara AI</div>
+            <div class="SiteFooter_copyright__YACmd"  style="font-family: 'Product Sans Regular' !important; font-size: 22px;">© 2025 Gatara AI</div>
           </div>
         </div>
       </div>
