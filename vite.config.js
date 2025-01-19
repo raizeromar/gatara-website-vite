@@ -8,6 +8,7 @@ export default defineConfig({
         company: '/company/index.html',
         openroles: '/open-roles/index.html',
         applications: '/applications/',
+        notavailable: '/not-available-yet/index.html',
       },
     },
   },

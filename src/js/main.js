@@ -19,5 +19,6 @@ function injectComponents() {
     }
   }
   
+
   // Call the function when DOM is loaded
-  document.addEventListener('DOMContentLoaded', injectComponents);
+document.addEventListener('DOMContentLoaded', injectComponents);
